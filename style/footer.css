@@ -1,7 +1,6 @@
 .footer {
-    padding: 40px 0;
-    background-color: #ffffff;
-    color: #4b4c4d;
+    padding: 8px 0;
+    color: #211001;
 }
 
 .footer ul {
@@ -29,7 +28,7 @@
 
 .footer .social-media {
     text-align:center;
-    padding-bottom:25px;
+    padding-bottom:5px;
 }
 
 .footer .social-media > a {
@@ -51,7 +50,7 @@
     margin-top:15px;
     text-align:center;
     font-size:13px;
-    color:#aaa;
+    color:#211001;
     margin-bottom:0;
 }
 
@@ -59,3 +58,6 @@ img {
     width: 22px;
     height: 22px;
 }
+
+
+
