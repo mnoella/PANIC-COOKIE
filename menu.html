@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Header</title>
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/footer.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">CHOC DE SAVEUR</a>
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="#">ACCUEIL</a></li>
+          <li><a href="jeu.html">LE JEU</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="#mon-footer">CONTACTS</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+      <img src="img/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <header></header>
+
+  </body>
+    <!--ouvrir le menu avec le menu hamburger par un click-->
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger")
+      const navLinks = document.querySelector(".nav-links")
+
+      menuHamburger.addEventListener('click', ()=>{
+        navLinks.classList.toggle('mobile-menu')
+      })
+    </script>
+
+
+  <div class="footer" id="mon-footer">
+    <footer>
+        <div class="social-media"><a href="https://www.instagram.com/choc_de_saveur/" target="_blank"><img src="img/instagram.png" alt="insta"></a><a href="https://www.facebook.com/profile.php?id=61555658515306" target="_blank"><img src="img/facebook.png" alt="fb"></a><a href="#mail" target="_blank"><img src="img/gmail.png" alt=""></a></div>
+        <ul class="menu">
+            <li class="list"><a href="menu.html">Accueil</a></li>
+        </ul>
+        <p class="author">Choc De Saveur © 2023</p>
+    </footer>
+  </div>
+</html>

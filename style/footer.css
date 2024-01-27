@@ -1,6 +1,14 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 .footer {
     padding: 8px 0;
     color: #211001;
+    background-color: rgb(211, 179, 135);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .footer ul {
