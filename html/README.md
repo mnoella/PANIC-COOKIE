@@ -28,3 +28,6 @@ L'histoire captivante du jeu se déroule sur l'île d'Érable, où les Pancakes 
 
 Fou de rage, les Pancakes décident de prendre d'assaut l'île aux Cookies après avoir été éjectés. Le destin de cette bataille dépend de votre choix : serez-vous du côté des Pancakes ou des Cookies ? Rejoignez "Un Choc de Saveur" et vivez une aventure stratégique pleine de rebondissements !
 
+
+
+video bg: https://www.w3schools.com/howto/howto_css_fullscreen_video.asp
