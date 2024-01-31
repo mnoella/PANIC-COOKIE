@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/bg.jpg);
+    background-image: url('../img/bg.jpg');
     background-size: cover;
     text-align: center;
 }
@@ -15,17 +15,18 @@ body {
     display: none;
 }
 
-/* Montrer uniquement les débuts de réponses */
+/* Montrer uniquement les débuts de réponses 
 .faq-section label+p{
     display: block;
     color: #340109e7;
     font-size: .85em;
     transition: all .15s ease-out;
-    /* Couper le texte */
+    --Couper le texte--
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
+*/
 
 /* Si le checkbox est coché, montrer tous les paragraphes */
 .faq-section input[type=checkbox]:checked~p{
@@ -101,6 +102,12 @@ h3 {
 
 label {
     color: #211001;
+}
+
+.faq-section label {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .faq-section input[type=checkbox] {

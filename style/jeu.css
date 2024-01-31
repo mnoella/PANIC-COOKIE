@@ -24,21 +24,57 @@ body {
     perspective: 1000px; 
     margin-right: 10px;
 }
-  
+
+.evenement{
+  background-color: transparent;
+  width: 150px;
+  height: 80px;
+  perspective: 1000px; 
+}
+
+.quete {
+  background-color: transparent;
+  width: 150px;
+  height: 80px;
+  perspective: 500px; 
+  align-items: center;
+}
+
+.jeton-cookie, .jeton-pancake, .jeton-de-vie, .ressource {
+  display: flex;
+  justify-content: center;
+  padding: 0 15px 0 15px;
+}
+
+.jeton-cookie div, .jeton-pancake div, .jeton-de-vie div, .ressource div{
+  padding: 0 17px 0 17px;
+}
+
+.ressource div p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 12.5px;
+}
  
-  .flip-card-inner {
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
+}
 
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-  
+
+  .evenement:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .quete:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
   
   .flip-card-front, .flip-card-back {
     position: absolute;
@@ -71,6 +107,37 @@ body {
   .tour img:hover {
     width: 255px;
     height: 305px;
+  }
+
+  .flip-card .description, .quete .description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    padding: 75px 0 0 0;
+    /*opacity: 0;
+    transition: opacity 0.5s;*/
+  }
+
+  .quete .description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    padding: 27px 0 0 0;
+    /*opacity: 0;
+    transition: opacity 0.5s;*/
+  }
+
+  /*
+  .flip-card:hover .description {
+    opacity: 1;
+  }*/
+
+  .flip-card .description p:first-child {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .jeton-cookie p, .jeton-pancake p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
   }
 
 

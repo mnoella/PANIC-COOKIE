@@ -4,34 +4,11 @@ body, html {
 }
 
 .footer {
-    padding: 8px 0;
+    padding: 1px;
     color: #211001;
-    background-color: rgb(211, 179, 135);
+    background-color: rgb(86, 56, 19);
     background-size: cover;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.footer ul {
-    padding: 0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
-}
-
-.footer li {
-    padding:0 10px;
-}
-
-.footer ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.8;
-}
-
-.footer ul a:hover {
-    opacity:1;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .footer .social-media {
@@ -57,7 +34,7 @@ body, html {
 .footer .author {
     margin-top:15px;
     text-align:center;
-    font-size:13px;
+    font-size:14px;
     color:#211001;
     margin-bottom:0;
 }
