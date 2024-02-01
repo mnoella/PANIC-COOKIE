@@ -99,14 +99,46 @@ body {
     font-family: 'Stencil';
   }
 
-  .tour img{
-    width: 105px;
-    height: 155px;
+  .tour p, .tour h4{
+    font-family: 'Stencil';
+    padding: 9px;
+  }
+  
+  .tour p {
+    font-size: 7px;
   }
 
-  .tour img:hover {
-    width: 255px;
-    height: 305px;
+  .tour h4 {
+    font-size: 11px;
+  }
+
+  .tour {
+    border: 2px solid rgb(0, 0, 0);
+    margin: 1px 540px;
+    width: 200px;
+    height: auto;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    background-color: white;
+    
+  }
+
+
+ 
+
+  .tour:hover,.tour:hover p{
+    width: 250px;
+    height: auto;
+    font-size: 11px;
+    padding-right: 15px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .tour:hover h4 {
+    font-size: 16px;
+    text-align: center;
   }
 
   .flip-card .description, .quete .description {
@@ -139,5 +171,3 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12px;
   }
-
-
