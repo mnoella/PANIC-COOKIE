@@ -113,3 +113,17 @@ label {
 .faq-section input[type=checkbox] {
     vertical-align: middle;
 }
+
+
+/* version mobile */
+@media screen and (max-width: 428px) {
+    .faq-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq-section label, .faq-section p, .faq-section input {
+        text-align: center;
+    }
+}
