@@ -12,10 +12,10 @@ body {
 
 .flip-card-container {
     display: flex;
-    flex-wrap: wrap; /* Passer a la ligne en fonction de la taille de l'écran*/ 
+    flex-wrap: wrap;/* Passer a la ligne en fonction de la taille de l'écran*/ 
     justify-content: center;
     gap: 20px;
-    margin: auto;
+    
 }
 
 .flip-card {
@@ -24,13 +24,60 @@ body {
     height: 80px;
     perspective: 1000px; 
     margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 150px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.evenement:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.quete:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
 }
 
 .evenement{
+  display: flex;
   background-color: transparent;
   width: 150px;
   height: 80px;
+  margin: 5px;
   perspective: 1000px; 
+  padding-bottom: 10px;
+  padding-left: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
 .quete {
@@ -39,16 +86,20 @@ body {
   height: 80px;
   perspective: 500px; 
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .jeton-cookie, .jeton-pancake, .jeton-de-vie, .ressource {
   display: flex;
   justify-content: center;
   padding: 0 15px 0 15px;
+  flex-wrap: wrap;
 }
 
 .jeton-cookie div, .jeton-pancake div, .jeton-de-vie div, .ressource div{
-  padding: 0 17px 0 17px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-bottom: 30px;
 }
 
 .ressource div p {
@@ -56,44 +107,6 @@ body {
   font-size: 12.5px;
 }
  
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .evenement:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .quete:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-
-  .flip-card-front {
-    color: black;
-  }
-  
-
-  .flip-card-back {
-    transform: rotateY(180deg);
-  }
 
   h3, h5 {
     color: #211001;

@@ -133,17 +133,18 @@ header {
     margin-right: 150px;
     margin-top: 50px;
     padding: 10px 25px 25px 25px;
-
+    flex-wrap: wrap;
 }
 
 .contexte p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14.5px;
     
+    
 }
 
 
-/* version mobile */
+/* version mobile 
 @media screen and (max-width: 428px) {
     .navbar {
         padding: 0;
@@ -170,7 +171,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: -100%; /* par défaut le menu sera caché, en cliquant sur mobile menu, ça va s'ouvrir*/
+        margin-left: -100%;  par défaut le menu sera caché, en cliquant sur mobile menu, ça va s'ouvrir
         transition: all 0.5s ease;
     }
 
@@ -190,3 +191,4 @@ header {
     }
 
 }
+*/

@@ -1,32 +1,24 @@
-body {
-    background-image: url('../img/bg.jpg');
-    background-size: cover;
-    text-align: center;
-}
-
 /* Espacement entre les questions */
 .faq-section{
-    margin: 40px 0;
+    padding: 40px;
 }
 
 /* Masquer les checkbox et les paragraphes */
 .faq-section input,
 .faq-section p{
-    display: none;
+    display: none;;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-/* Montrer uniquement les débuts de réponses 
-.faq-section label+p{
-    display: block;
-    color: #340109e7;
-    font-size: .85em;
-    transition: all .15s ease-out;
-    --Couper le texte--
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+
+.faq-section p {
+    max-width: 800px; /* ou toute autre valeur appropriée */
+    margin: 0 auto; /* Centrer le paragraphe */
+    overflow-wrap: break-word;
 }
-*/
+
 
 /* Si le checkbox est coché, montrer tous les paragraphes */
 .faq-section input[type=checkbox]:checked~p{
@@ -56,6 +48,8 @@ body {
     min-width: 800px;
 }
 
+
+
 /* Éviter de sélectionner le texte en cliquant plusieurs fois */
 .faq-section label::selection{
     background: none;
@@ -73,7 +67,7 @@ body {
     box-shadow: 0 0 1px rgba(0,0,0,.4);
 }
 
-/* Flèche du label par défaut */
+/* Flèche label par défaut */
 .faq-section label::before{
     content: '';
     position: absolute;
@@ -84,7 +78,7 @@ body {
     border-left-color: inherit;
 }
 
-/* Flèche du label sélectionné */
+/* Flèche label sélectionné */
 .faq-section input[type=checkbox]:checked~label::before{
     border: 6px solid transparent;
     border-top-color: inherit;
@@ -115,15 +109,3 @@ label {
 }
 
 
-/* version mobile */
-@media screen and (max-width: 428px) {
-    .faq-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .faq-section label, .faq-section p, .faq-section input {
-        text-align: center;
-    }
-}
