@@ -24,7 +24,7 @@
 .faq-section input[type=checkbox]:checked~p{
     display: block;
     color: #342401e7;
-    font-size: 1em;
+    font-size: 1.2em;
     /* Restaurer le texte entier */
     text-overflow: clip;
     white-space: normal;
